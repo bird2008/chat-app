@@ -1,0 +1,167 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	align-items: center;
+	background-color: gray;
+	display: flex;
+	font-family: "Open Sans", sans-serif;
+	height: 100vh;
+	justify-content: center;
+	width: 100vw;
+}
+
+main {
+	max-width: 320px;
+	position: relative;
+}
+
+::-webkit-scrollbar{
+	width: 10px;
+}
+
+::-webkit-scrollbar-track-piece{
+	background-color: #FFF;
+}
+
+::-webkit-scrollbar-thumb{
+	background-color: #CBCBCB;
+	outline: 2px solid #FFF;
+	outline-offset: -2px;
+	border: .1px solid #B7B7B7;
+}
+
+::-webkit-scrollbar-thumb:hover{
+	background-color: #909090;
+}
+
+#chatOutput,
+#messageInput,
+#contact {
+	max-height: 600px;
+	max-width: 320px;
+	min-width: 260px;
+}
+
+#contact {
+	align-items: center;
+	background-color: white;
+	border-radius: 1vw 1vw 0 0;
+	box-shadow: 0 2px 2px -2px gray;
+	display: flex;
+	justify-content: space-between;
+	font-weight: 600;
+	height: 7vh;
+	position: relative;
+	width: 30vw;
+}
+
+#receivingUser {
+	align-items: center;
+	display: flex;
+	justify-content: center;
+	margin: 1vw;
+}
+
+#userPhoto {
+	height: vh;
+	margin-right: 0.5vw;
+	width: 5vh;
+}
+
+#userName {
+	font-size: 2vh;
+}
+
+#chatOutput {
+	background-color: white;
+	height: 80vh;
+	display: flex;
+	align-items: flex-end;
+	flex-direction: column;
+	overflow: auto;
+	width: 30vw;
+}
+
+#chatOutput > * {
+	background-color: rgb(0, 128, 255);
+	border-radius: 999vh;
+	color: aliceblue;
+	padding: 1vh;
+	margin: 1vh;
+	margin-bottom: 0;
+	width: max-content;
+}
+
+#messageInput {
+	align-items: center;
+	background-color: white;
+	border-radius: 0 0 1vw 1vw;
+	display: flex;
+	height: 5vh;
+	justify-content: space-evenly;
+	width: 30vw;
+}
+
+#messageContentInput {
+	background-color: rgb(238, 238, 238);
+	border: none;
+	border-radius: 999vh;
+	height: 3vh;
+	margin-right: 15%;
+	min-width: 70px;
+	outline: none;
+	padding-bottom: 0.7vh;
+	padding-top: 0.7vh;
+	padding-left: 10px;
+	padding-right: 10px;
+	resize: none;
+	width: 10vw;
+}
+
+#callImage,
+#videoCallImage,
+#galleryIconImage,
+#microphoneIconImage,
+#cameraIconImage {
+	cursor: pointer;
+	height: 4.5vw;
+	max-height: 35px;
+	max-width: 35px;
+	min-height: 20px;
+	min-width: 20px;
+	width: 4.5vw;
+}
+
+#videoCallImage {
+	margin-left: 1vh;
+	margin-right: 3vh;
+	margin-top: 1vh;
+}
+
+#thumbsUpImage,
+#sendArrowImage {
+	cursor: pointer;
+	height: 6vw;
+	margin-bottom: 0.5vw;
+	max-height: 35px;
+	max-width: 35px;
+	min-height: 30px;
+	min-width: 30px;
+	position: absolute;
+	right: 1vw;
+	width: 6vw;
+}
+
+#sendArrowImage {
+	display: none;
+}
+
+#microphoneIconImage {
+	height: 4vh;
+	min-height: 20px;
+	min-width: 20px;
+	width: 5vh;
+}
